@@ -1,6 +1,25 @@
 {
     "version": 2,
     "routes": [
-        { "src": "/api/hubspot", "methods": ["GET","POST","OPTIONS"], "dest": "/api/hubspot.js" }
+        {
+            "src": "/api/auth/start",
+            "methods": ["GET"],
+            "dest": "/api/auth/start.js"
+        },
+        {
+            "src": "/api/auth/callback",
+            "methods": ["GET"],
+            "dest": "/api/auth/callback.js"
+        },
+        {
+            "src": "/api/auth/refresh",
+            "methods": ["POST", "OPTIONS"],
+            "dest": "/api/auth/refresh.js"
+        },
+        {
+            "src": "/api/hubspot",
+            "methods": ["GET", "POST", "OPTIONS"],
+            "dest": "/api/hubspot.js"
+        }
     ]
 }
