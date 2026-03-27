@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "routes": [
+        { "src": "/api/hubspot", "methods": ["GET","POST","OPTIONS"], "dest": "/api/hubspot.js" }
+    ]
+}
