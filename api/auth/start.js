@@ -7,9 +7,11 @@ const SCOPES = [
     'crm.objects.contacts.read',
     'crm.objects.companies.read',
     'crm.objects.deals.read',
+    'crm.objects.contacts.write',
     'crm.schemas.contacts.read',
     'crm.schemas.companies.read',
     'crm.schemas.deals.read',
+    'tickets',
 ].join(' ');
 
 module.exports = async function handler(req, res) {
